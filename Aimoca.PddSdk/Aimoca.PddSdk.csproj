@@ -5,6 +5,7 @@
     <Authors>zdp120</Authors>
     <Company>duolemao.com</Company>
     <Description>.net core 拼多多SDK接口</Description>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
