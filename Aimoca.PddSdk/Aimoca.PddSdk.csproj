@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <Version>2.2.0</Version>
+    <Version>2.2.1.1</Version>
     <Authors>zdp120</Authors>
     <Description>拼多多api sdk,基于.net core 2.2</Description>
+    <AssemblyVersion>2.2.1.1</AssemblyVersion>
+    <FileVersion>2.2.1.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

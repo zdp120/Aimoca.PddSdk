@@ -117,12 +117,12 @@ namespace Aimoca.PddSdk.Models.Response.Ddk
                 /// 商品标签ID
                 /// </summary>
                 [JsonProperty("opt_ids")]
-                public int? OptIds { get; set; }
+                public List<int?> OptIds { get; set; }
                 /// <summary>
                 /// 商品一~四级类目ID列表
                 /// </summary>
                 [JsonProperty("cat_ids")]
-                public int? CatIds { get; set; }
+                public List<int?> CatIds { get; set; }
                 /// <summary>
                 /// 优惠券门槛金额，单位为分
                 /// </summary>

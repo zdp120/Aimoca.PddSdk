@@ -76,16 +76,31 @@ namespace Aimoca.PddSdk.Services
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonResult = await response.Content.ReadAsStringAsync();
+                    //Console.WriteLine(jsonResult);
                     var jObject = JObject.Parse(jsonResult);
                     if (jObject.TryGetValue("error_response", out var errorResponse))
                     {
                         // TODO:处理错误信息
-                        Console.WriteLine("错误信息:" + errorResponse.ToString());
+                        //Console.WriteLine("错误信息:" + errorResponse.ToString());
                         File.AppendAllText("error.json", jsonResult + "\r\n");
                         return default;
                     }
                     else
                     {
+                        //Console.WriteLine("开始封装对象");
+                        //var result = default(TResult);
+                        //try
+                        //{
+                            //result = JsonConvert.DeserializeObject<TResult>(jsonResult);
+                        //}
+                        //catch(Exception ex)
+                        //{
+                            //Console.WriteLine("对象封装异常");
+                            //Console.WriteLine(ex.ToString());
+                            
+                        //}
+                        
+                        //Console.WriteLine("对象封装完毕");
                         return JsonConvert.DeserializeObject<TResult>(jsonResult);
                     }
                 }
