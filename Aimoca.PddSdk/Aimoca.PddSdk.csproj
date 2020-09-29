@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <Version>3.1.0.0</Version>
     <Authors>zdp120</Authors>
     <Description>拼多多api sdk,基于.net core 3.1</Description>
